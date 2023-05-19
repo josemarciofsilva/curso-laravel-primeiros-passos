@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo "<h1>Rota Raiz</h1>";
+ });
+
+Route::get('/bemvindo', function () {
+   echo "<h1>Rota Bem Vindo</h1>";
 });
+
+Route::get('/laravel', function () {
+    return view('welcome');
+ });
