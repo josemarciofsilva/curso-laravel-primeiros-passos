@@ -18,8 +18,12 @@ Route::get('/', function () {
  });
 
 Route::get('/bemvindo', function () {
-   echo "<h1>Rota Bem Vindo</h1>";
-});
+    return view('bemvindo');
+})->name('bemvindo');
+
+Route::get('/contato', function () {
+    return view('contato');
+})->name('contato');
 
 Route::get('/laravel', function () {
     return view('welcome');
