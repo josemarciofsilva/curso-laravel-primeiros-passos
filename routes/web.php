@@ -24,3 +24,9 @@ Route::get('/bemvindo', function () {
 Route::get('/laravel', function () {
     return view('welcome');
  });
+
+ Route::get('/custom', function(){
+    $msg = "mensagem do servidor back end *-*";
+    $idade = 47;
+    return view('custom', ['msg' => $msg, 'idade' => $idade]);
+ });
